@@ -1,0 +1,18 @@
+nz-header {
+  padding: 0%;
+}
+
+h1 {
+  color: white;
+}
+
+#timezone-label {
+  color: white;
+  margin-right: 0.8rem;
+}
+
+@media only screen and (max-width: 576px) {
+  #timezone-label {
+    display: none;
+  }
+}

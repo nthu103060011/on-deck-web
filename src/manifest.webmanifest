@@ -1,6 +1,6 @@
 {
-  "name": "on-deck",
-  "short_name": "on-deck",
+  "name": "on-deck-web",
+  "short_name": "on-deck-web",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",

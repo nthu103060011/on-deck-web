@@ -9,4 +9,10 @@ if (environment.production) {
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule)
+  .then(() => {
+    if ('serviceWorker' in navigator && environment.production) {
+      // Register service worker for showing notifications
+      navigator.serviceWorker.register('ngsw-worker.js');
+    }
+  })
   .catch(err => console.error(err));

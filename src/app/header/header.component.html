@@ -1,0 +1,17 @@
+<nz-header>
+  <div nz-row>
+    <div nz-col nzXs="1" nzSm="1" nzMd="4" nzLg="4" nzXl="6"></div>
+    <div nz-col nzXs="22" nzSm="22" nzMd="16" nzLg="16" nzXl="12">
+      <div style="float: left;">
+        <h1>ON DECK</h1>
+      </div>
+      <div style="float: right;">
+        <span id="timezone-label">太平洋時間</span>
+        <nz-date-picker nzFormat="yyyy/MM/dd" [(ngModel)]="date" (nzOnOpenChange)="changeDate()"
+          nzAllowClear="false">
+        </nz-date-picker>
+      </div>
+    </div>
+    <div nz-col nzXs="1" nzSm="1" nzMd="4" nzLg="4" nzXl="6"></div>
+  </div>
+</nz-header>

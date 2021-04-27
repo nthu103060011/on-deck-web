@@ -1,0 +1,19 @@
+<nz-table #subscriptionTable [nzData]="subscriptions" nzHideOnSinglePage="true">
+  <thead>
+    <tr>
+      <th>比賽</th>
+      <th>球員</th>
+      <th>追蹤狀態</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let subscription of subscriptionTable.data">
+      <td>{{subscription.vs}}</td>
+      <td>{{subscription.player}}</td>
+      <td>
+        <span *ngIf="subscription.tracking">追蹤中</span>
+        <button nz-button *ngIf="!subscription.tracking" (click)="contFollowPlayer(subscription)">繼續追蹤</button>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>

@@ -1,0 +1,17 @@
+<div nz-row>
+  <nz-select nz-col nzXs="24" nzSm="13" [(ngModel)]="selectedGame" (ngModelChange)="fetchPlayers($event)"
+    nzPlaceHolder="選擇比賽">
+    <nz-option *ngFor="let game of liveGames" [nzValue]="game.gamePk" [nzLabel]="game.away + ' vs. ' + game.home">
+    </nz-option>
+  </nz-select>
+  <nz-select nz-col nzXs="24" nzSm="6" nzShowSearch [(ngModel)]="selectedPlayer" nzPlaceHolder="選擇球員">
+    <nz-option-group nzLabel="客隊球員">
+      <nz-option *ngFor="let player of awayPlayers" [nzValue]="player" [nzLabel]="player"></nz-option>
+    </nz-option-group>
+    <nz-option-group nzLabel="主隊球員">
+      <nz-option *ngFor="let player of homePlayers" [nzValue]="player" [nzLabel]="player"></nz-option>
+    </nz-option-group>
+  </nz-select>
+  <button nz-col nzXs="24" nzSm="5" nz-button nzType="primary" (click)="onFollowClick()"><i nz-icon
+      nzType="plus"></i>追蹤球員</button>
+</div>
