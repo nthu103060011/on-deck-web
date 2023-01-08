@@ -2,7 +2,8 @@
 A web app that pushes a notification when your favorite baseball player is on deck.
 
 ## For Users
-Go to https://on-deck-web.herokuapp.com/ and follow your favorite players as the game begins!
+Go to ~~https://on-deck-web.herokuapp.com/~~ and follow your favorite players as the game begins!
+> This site has been closed since Heroku no longer provides free dynos.
 
 ### Notify Events
 You would receive a push notification when the followed player is
